@@ -44,6 +44,8 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, SignUp::class.java)
             finish()
             startActivity(intent)
+            val asdasfasf:String = "safasfasf"
+            //SECOND COMM
         }
 
     }

@@ -62,6 +62,7 @@ class SignUp : AppCompatActivity() {
             val intent = Intent(this, LoginActivity::class.java)
             finish()
             startActivity(intent)
+            // NEW
         }
 
 
