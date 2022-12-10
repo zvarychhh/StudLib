@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "378127710619",
+    "project_id": "studlib-2472b",
+    "storage_bucket": "studlib-2472b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378127710619:android:4e675fb15cffa27cb3c93e",
+        "android_client_info": {
+          "package_name": "com.zvarych.studlib"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378127710619-e0s64uaejff2s733u4pr3elsdo0rdkor.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzqmkYqappAf4WIU887a-wf3qSa6pB99U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378127710619-e0s64uaejff2s733u4pr3elsdo0rdkor.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

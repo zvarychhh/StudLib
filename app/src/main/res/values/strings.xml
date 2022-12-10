@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">StudLib</string>
+    <string name="email">Email</string>
+    <string name="name">Full Name</string>
+    <string name="password">Password</string>
+    <string name="log_in">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_txt_preview">Dont have account yet ?</string>
+    <string name="sign_txt_preview">Already have account ?</string>
+    <string name="guest">Enter as guest</string>
+    <string name="reg">Registration</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="users_type">
+        <item>Student</item>
+        <item>Teacher</item>
+    </string-array>
+    <string-array name="departments">
+        <item>Department of software engineering</item>
+        <item>Department of computer systems and networks</item>
+        <item>Department of automation and computer-integrated technologies</item>
+    </string-array>
+
+    <string name="large_text">1</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+</resources>
