@@ -28,11 +28,9 @@ class LoginActivity : AppCompatActivity() {
                 auth.signInWithEmailAndPassword(email.toString(), password.toString())
                     .addOnCompleteListener(this) {
                         if (it.isSuccessful) {
-                            Toast.makeText(
-                                this,
-                                "${email.toString()} ${password.toString()}",
-                                Toast.LENGTH_SHORT
-                            ).show()
+                            val intent = Intent(this, MainActivity::class.java)
+                            finish()
+                            startActivity(intent)
                         } else {
                             Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
                         }
@@ -40,7 +38,7 @@ class LoginActivity : AppCompatActivity() {
             } else Toast.makeText(this, "Undone", Toast.LENGTH_SHORT).show()
         }
 
-        binding.guestLogin.setOnClickListener {
+        binding.signupBtn.setOnClickListener {
             val intent = Intent(this, SignUp::class.java)
             finish()
             startActivity(intent)
