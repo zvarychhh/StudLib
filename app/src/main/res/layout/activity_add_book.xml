@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".LoginActivity">
+
+    <EditText
+
+        android:id="@+id/tittle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edt_background"
+        android:hint="@string/title"
+        android:importantForAutofill="no"
+        android:inputType="textWebEmailAddress"
+        android:paddingStart="@dimen/pading_start_input"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+
+        android:id="@+id/author"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tittle"
+        android:layout_marginTop="@dimen/margin_top_input"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edt_background"
+        android:hint="@string/author"
+        android:importantForAutofill="no"
+        android:inputType="textWebEmailAddress"
+        android:paddingStart="@dimen/pading_start_input"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/author"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="@dimen/margin_top_input"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edt_background"
+        android:hint="@string/date"
+        android:importantForAutofill="no"
+        android:inputType="date|datetime"
+        android:paddingStart="@dimen/pading_start_input"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/count"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/date"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="@dimen/margin_top_input"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edt_background"
+        android:hint="@string/count"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:paddingStart="@dimen/pading_start_input"
+        tools:ignore="RtlSymmetry" />
+
+
+    <Button
+        android:id="@+id/btn_save_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/count"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="@dimen/margin_top_input"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/btn_background"
+        android:text="@string/save"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

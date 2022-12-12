@@ -1,14 +1,19 @@
 package com.zvarych.studlib.classes
 
 class Book {
-    var tittle: String? = null
+    var title: String? = null
     var author: String? = null
-    var year_of_publication: String? = null
+    var date: String? = null
+    var uid: String? = null
+    var count: Int? = null
+
 
     constructor() {}
-    constructor(tittle: String, author: String, year_of_publication: String) {
-        this.tittle = tittle
+    constructor(title: String, author: String, date: String, uid: String, count: Int) {
+        this.title = title
         this.author = author
-        this.year_of_publication = year_of_publication
+        this.date = date
+        this.uid = uid
+        this.count = count
     }
 }
