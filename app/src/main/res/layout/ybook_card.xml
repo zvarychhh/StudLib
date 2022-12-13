@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_background"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/ybook_card_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="@string/title_test"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/desc"
+            android:layout_below="@id/ybook_card_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:text="Author: "
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size" />
+
+
+            <TextView
+                android:id="@+id/ybook_card_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="start"
+                android:text="@string/author_test"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_below="@id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/ybook_card_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:textSize="@dimen/txt_size"
+                android:text="31/01/2002" />
+
+
+            <Button
+                android:id="@+id/ybtn_your_book"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/red_btn_back"
+                android:layout_gravity="center"
+                android:text="delete"
+                android:textSize="@dimen/txt_size" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView >

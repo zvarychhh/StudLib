@@ -8,7 +8,6 @@ class User {
     var uid: String? = null
     var user_type: String? = null
     var department: String? = null
-    var admin: Boolean? = null
 
 
     constructor() {}
@@ -18,15 +17,13 @@ class User {
         email: String?,
         user_type: String?,
         department: String?,
-        uid: String?,
-        admin: Boolean
+        uid: String?
     ) {
         this.username = username
         this.email = email
         this.user_type = user_type
         this.department = department
         this.uid = uid
-        this.admin = admin
 
     }
 }

@@ -116,6 +116,6 @@ class SignUp : AppCompatActivity() {
         database = FirebaseDatabase.getInstance().getReference()
 
         database.child("user").child(uid)
-            .setValue(User(name, email, user, department, uid, false))
+            .setValue(User(name, email, user, department, uid))
     }
 }
