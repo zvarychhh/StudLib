@@ -8,7 +8,7 @@
 
     <EditText
 
-        android:id="@+id/tittle"
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="200dp"
@@ -26,7 +26,7 @@
         android:id="@+id/author"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@+id/tittle"
+        android:layout_below="@+id/title"
         android:layout_marginTop="@dimen/margin_top_input"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
@@ -52,27 +52,11 @@
         android:paddingStart="@dimen/pading_start_input"
         tools:ignore="RtlSymmetry" />
 
-    <EditText
-        android:id="@+id/count"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_below="@+id/date"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="@dimen/margin_top_input"
-        android:layout_marginRight="30dp"
-        android:background="@drawable/edt_background"
-        android:hint="@string/count"
-        android:importantForAutofill="no"
-        android:inputType="number"
-        android:paddingStart="@dimen/pading_start_input"
-        tools:ignore="RtlSymmetry" />
-
-
     <Button
         android:id="@+id/btn_save_book"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/count"
+        android:layout_below="@+id/date"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="@dimen/margin_top_input"
         android:layout_marginRight="30dp"

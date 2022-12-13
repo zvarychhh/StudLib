@@ -19,10 +19,9 @@ class AddBookActivity : AppCompatActivity() {
         binding = ActivityAddBookBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val title = binding.tittle
+        val title = binding.title
         val author = binding.author
         val date = binding.date
-        val count = binding.count
 
         binding.btnSaveBook.setOnClickListener {
             if (title.text.isEmpty()) {
@@ -34,26 +33,20 @@ class AddBookActivity : AppCompatActivity() {
             if (date.text.isEmpty()) {
                 date.setError("Is Empty!")
             }
-            if (count.text.isEmpty()) {
-                count.setError("Is Empty!")
-            }
-
-            if (title.text.isNotEmpty() && author.text.isNotEmpty() && date.text.isNotEmpty() && count.text.isNotEmpty()) {
+            if (title.text.isNotEmpty() && author.text.isNotEmpty() && date.text.isNotEmpty()) {
                 addtoDataBase(
                     title.text.toString(),
                     author.text.toString(),
                     date.text.toString(),
-                    UUID.randomUUID().toString(),
-                    count.text.toString().toInt()
-                )
+                    UUID.randomUUID().toString())
             }
         }
     }
 
     private fun addtoDataBase(
-        title: String, author: String, date: String, uid: String, count: Int
+        title: String, author: String, date: String, uid: String
     ) {
         database = FirebaseDatabase.getInstance().getReference()
-        database.child("book").child(uid).setValue(Book(title, author, date, uid, count))
+        database.child("book").child(uid).setValue(Book(title, author, date, uid))
     }
 }

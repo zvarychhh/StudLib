@@ -3,10 +3,14 @@
     <string name="email">Email</string>
     <string name="title">Title</string>
     <string name="author">Author</string>
+    <string name="author_test">Henry Petroski</string>
     <string name="date">Date</string>
+    <string name="lbook">Library book</string>
+    <string name="ybook">Your book</string>
     <string name="count">Count</string>
     <string name="save">Save</string>
     <string name="name">Full Name</string>
+    <string name="title_test">To Engineer Is Human: The Role of Failure in Successful Design</string>
     <string name="password">Password</string>
     <string name="log_in">Login</string>
     <string name="sign_up">Sign up</string>
